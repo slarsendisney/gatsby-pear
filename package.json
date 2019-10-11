@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-watermelon",
+  "name": "gatsby-pear",
   "private": true,
   "description": "A GatsbyJS boilerplate with Redux and socket.io all wrapped up nicely in an Express server.",
   "version": "0.1.0",
@@ -41,6 +41,7 @@
     "react-helmet": "^5.2.1",
     "sass-flex-mixin": "^1.0.3",
     "sharp": "^0.23.1",
+    "sld-component-library": "^0.1.5",
     "typescript": "^3.6.3"
   },
   "keywords": [
