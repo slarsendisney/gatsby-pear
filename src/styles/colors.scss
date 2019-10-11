@@ -1,0 +1,16 @@
+$brand-colors: 
+("white",white),
+("black",#1C1C1C),
+("light-brown",#E1D2AF),
+("grey", #2E4052),
+("light-grey", #F9F9F9),
+("green", #9BC995);
+
+@each $color in $brand-colors {
+  .is-#{nth($color,1)}-bg{
+    background-color: nth($color,2) !important;
+  }
+  .is-#{nth($color,1)}{
+    color: nth($color,2) !important;
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "name": "gatsby-watermelon",
+  "private": true,
+  "description": "A GatsbyJS boilerplate with Redux and socket.io all wrapped up nicely in an Express server.",
+  "version": "0.1.0",
+  "author": "Sam Larsen-Disney <s.larsendisney@gmail.com>",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "compression": "^1.7.4",
+    "concurrently": "^5.0.0",
+    "express": "^4.17.1",
+    "supervisor": "^0.12.0"
+  },
+  "devDependencies": {
+    "flexboxgrid-sass": "^8.0.5",
+    "gatsby": "^2.15.29",
+    "gatsby-image": "^2.2.24",
+    "gatsby-plugin-manifest": "^2.2.20",
+    "gatsby-plugin-offline": "^2.2.10",
+    "gatsby-plugin-react-helmet": "^3.1.10",
+    "gatsby-plugin-sass": "^2.1.17",
+    "gatsby-plugin-sharp": "^2.2.28",
+    "gatsby-remark-copy-images": "^0.2.1",
+    "gatsby-remark-copy-linked-files": "^2.1.24",
+    "gatsby-remark-images": "^3.1.25",
+    "gatsby-remark-prismjs": "^3.3.17",
+    "gatsby-remark-relative-images": "^0.2.3",
+    "gatsby-remark-responsive-iframe": "^2.2.21",
+    "gatsby-remark-smartypants": "^2.1.11",
+    "gatsby-source-filesystem": "^2.1.29",
+    "gatsby-transformer-remark": "^2.6.27",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2",
+    "prismjs": "^1.17.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.10.2",
+    "react-blur-image-loader": "^0.2.2",
+    "react-dom": "^16.10.2",
+    "react-helmet": "^5.2.1",
+    "sass-flex-mixin": "^1.0.3",
+    "sharp": "^0.23.1",
+    "typescript": "^3.6.3"
+  },
+  "keywords": [
+    "gatsby",
+    "watermelon"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "concurrently 'npm run hello && gatsby develop -o -p 5051' 'supervisor --watch server/index.js server/index.js'",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \"",
+    "hello": "node scripts/hello.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/slarsendisney/gatsby-watermelon"
+  }
+}
