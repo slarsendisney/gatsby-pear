@@ -34,7 +34,13 @@ const Example = () => {
         </button>
         {response && (
           <>
-            <h4>🎉 We got a response from the server!</h4>
+            <h4>
+              {" "}
+              <span role="img" aria-label="celebrate">
+                🎉
+              </span>{" "}
+              We got a response from the server!
+            </h4>
             <code className="pad-3 is-grey-bg is-white border-radius">
               {JSON.stringify(response)}
             </code>
